@@ -19,15 +19,13 @@ function Header() {
       <a href='#'>Solar Roof</a>
       <a href='#'>Solar Panels</a>
 
-
-
       </Menu>
       <RightMenu>
         <a href='#'>Shop</a>
         <a href='#'>Tesla Account</a>
+        <CustomMenu  onClick={()=>{setburgerstatus(true)}}/>
 
       </RightMenu>
-      <CustomMenu  onClick={()=>{setburgerstatus(true)}}/>
       <BurgerNav show={burgerstatus}>
       <CloseIconwrapper>
       <Closed  onClick={()=>{setburgerstatus(false)
@@ -60,8 +58,10 @@ function Header() {
 export default Header
 
 const Container =styled.div`
-min-height:60px;
+max-height:50px;
+
 margin-bottom:10px;
+
 position:fixed;
 display:flex;
 align-items:center;
@@ -80,10 +80,12 @@ flex-wrap:no-wrap;
 
 
 
+
 a{
   font-weight:600;
   text-transform:uppercase;
-padding:10px;
+padding:10px 5px;
+margin-right:10px;
 
 }
 
@@ -95,15 +97,22 @@ padding:10px;
 const RightMenu=styled.div`
 display:flex;
 align-items:center;
+padding:10px 15px;
 a{
   font-weight:600;
   text-transform:uppercase;
-padding:10px;
+  padding:10px 5px;
 
+
+
+}
+@media(max-width:768px){
+  display:none;
 }
 `
 const CustomMenu=styled(MenuIcon)`
 cursor:pointer;
+margin-left:10px;
   
 `
 

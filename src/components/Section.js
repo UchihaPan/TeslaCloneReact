@@ -34,7 +34,7 @@ const Wrap=styled.div`
 width:100vw;
 height:100vh;
 background-size:cover;
-background-position:center;
+background-position:center center;
 background-image:${props=>`url(${props.img})`};
 
 display:flex;

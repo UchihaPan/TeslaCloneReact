@@ -14,6 +14,8 @@ function Home() {
     <Section heading='Model y' description='Order Online For Touchless Delivery.' leftbtntext='Customize Order' rightbtntext='Existing User' img='images/model-y.jpg'/>
     <Section heading='Solar Roof' description='Produce Clean Energy From Your Roof.' leftbtntext='Customize Order' rightbtntext='Existing User' img='images/solar-roof.jpg'/>
     <Section heading='Solar Panels' description='Lowest Cost Solar Panels in America.' leftbtntext='Customize Order' rightbtntext='Existing User' img='images/solar-panel.jpg'/>
+    <Section heading='Accessories'  leftbtntext='Customize Order'  img='images/accessories.jpg'/>
+
 
 
      </Container>
