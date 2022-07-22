@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from "styled-components"
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 
 function Section({heading,description,leftbtntext,rightbtntext,img}) {
   return (
     <Wrap img={img}>
         <ItemText>
-        <Fade top>
+        <Fade Top>
 
             <h1>{heading}</h1>
             <p>{description}</p>
@@ -34,7 +34,7 @@ const Wrap=styled.div`
 width:100vw;
 height:100vh;
 background-size:cover;
-background-position:center center;
+background-position:center c;
 background-image:${props=>`url(${props.img})`};
 
 display:flex;
